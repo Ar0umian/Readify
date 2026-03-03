@@ -1,0 +1,39 @@
+
+<div dir="rtl" style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; border: 1px solid #eee; padding: 20px;">
+    <div style="text-align: center; background-color: #6F4E37; padding: 20px; color: white;">
+        <h1 style="margin: 0;">Readify</h1>
+        <p>شكراً لشرائك من مكتبتنا</p>
+    </div>
+    
+    <div style="padding: 20px;">
+        <h3>مرحباً {{ order.user.username }}،</h3>
+        <p>تم استلام طلبك رقم <strong>#{{ order.id }}</strong> بنجاح. إليك تفاصيل فاتورتك:</p>
+        
+        <table style="width: 100%; border-collapse: collapse;">
+            <tr style="background: #fdfaf7;">
+                <th style="padding: 10px; border: 1px solid #eee;">الكتاب</th>
+                <th style="padding: 10px; border: 1px solid #eee;">السعر</th>
+            </tr>
+            {% for item in order.items.all %}
+            <tr>
+                <td style="padding: 10px; border: 1px solid #eee;">{{ item.book.title }}</td>
+                <td style="padding: 10px; border: 1px solid #eee; color: #C5A059;">
+                    {{ item.book.price }} SAR
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+
+        <div style="margin-top: 20px; text-align: left; border-top: 2px solid #eee; padding-top: 10px;">
+            <p>المجموع الفرعي: <strong>{{ subtotal }} SAR</strong></p>
+            <p>الضريبة (5%): <strong>{{ tax_amount }} SAR</strong></p>
+            <hr>
+            <p style="font-size: 1.2rem; color: #6F4E37;">الإجمالي النهائي: <strong>{{ final_total }} SAR</strong></p>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <p style="color: #6F4E37; font-weight: bold;">رمز التحقق السريع (QR Code):</p>
+            <img src="cid:qr_code" width="150" alt="QR Code">
+        </div>
+    </div>
+</div>

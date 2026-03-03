@@ -1,0 +1,48 @@
+
+.btn-custom-brown {
+    background-color: #6F4E37 !important;
+    color: white !important;
+    border: none;
+    transition: all 0.3s ease;
+}
+.btn-custom-brown:hover {
+    background-color: #593e2c !important;
+    transform: translateY(-2px);
+}
+
+.text-style {
+    color: #C5A059 !important;
+    letter-spacing: 0.5px;
+}
+
+.text-style2 {
+    color: lab(29.62% 15.91 37.72) !important;
+    letter-spacing: 0.5px;
+}
+
+.search-glass-container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 100px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glass-input {
+    background: transparent !important;
+    color: white !important;
+    text-align: center;
+    border: none !important;
+}
+
+.book-description-box {
+    background-color: #fdfaf7; 
+    border-radius: 15px;
+    border-left: 5px solid hsla(25, 97%, 13%, 0.942) !important; 
+    border-right: none !important; 
+    box-shadow: 0 4px 15px rgba(111, 78, 55, 0.05);
+}
+
+.custom-brown-text {
+    color: #6F4E37; 
+}

@@ -1,0 +1,660 @@
+[
+{
+  "model": "catalogue.book",
+  "pk": 1,
+  "fields": {
+    "title": "مقدمة ابن خلدون",
+    "author": "ابن خلدون",
+    "description": "يُعد هذا الكتاب موسوعة تاريخية واجتماعية شاملة، حيث وضع فيه ابن خلدون أسس علم الاجتماع الحديث. يتناول الكتاب طبائع العمران البشري، وقوانين قيام الدول وسقوطها، وأهمية العصبية في بناء الممالك، مما يجعله مرجعاً فلسفياً وتاريخياً لا غنى عنه.",
+    "price": "85.00",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2yY8InrZF-U031ytv4KBwI5RkAoWwevNepw&s",
+    "created_at": "2026-03-02T06:11:14Z",
+    "last_read": "2026-03-02T04:37:24.554Z",
+    "rating": "4.9"
+  }
+},
+{
+  "model": "catalogue.book",
+  "pk": 2,
+  "fields": {
+    "title": "ثلاثية غرناطة",
+    "author": "رضوى عاشور",
+    "description": "رواية ملحمية من ثلاث أجزاء تأخذنا إلى غرناطة إبان سقوط الأندلس. تسرد الرضوى عاشور قصة عائلة أبي جعفر وحكايات الصمود والألم وفقدان الهوية، بأسلوب أدبي رفيع يمزج بين التاريخ والخيال الإنساني المؤثر.",
+    "price": "65.50",
+    "image_url": "https://www.noor-book.com/publice/covers_cache_webp/1/6/6/2/cef425e9626629c44a89f3f7b97ece2c.jpg.webp",
+    "created_at": "2026-03-02T06:11:14Z",
+    "last_read": "2026-03-02T04:32:40.425Z",
+    "rating": "4.8"
+  }
+},
+{
+  "model": "catalogue.book",
+  "pk": 3,
+  "fields": {
+    "title": "عزازيل",
+    "author": "يوسف زيدان",
+    "description": "رواية تاريخية فلسفية تدور أحداثها في القرن الخامس الميلادي بين صعيد مصر والإسكندرية وشمال سوريا. تتناول الصراعات المذهبية واللاهوتية في تلك الحقبة من خلال رحلة الراهب \"هيبا\"، بأسلوب سردي مشوق حاز على جائزة البوكر العربية.",
+    "price": "55.00",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMczkFoZte_oosJFV2RhteJwRmygf4fRr0tA&s",
+    "created_at": "2026-03-02T06:11:14Z",
+    "last_read": "2026-03-02T04:29:24.723Z",
+    "rating": "4.7"
+  }
+},
+{
+  "model": "catalogue.book",
+  "pk": 4,
+  "fields": {
+    "title": "الفيل الأزرق",
+    "author": "أحمد مراد",
+    "description": "رحلة غامضة في دهاليز النفس البشرية ومستشفى العباسية للأمراض النفسية. تبدأ الأحداث بعودة يحيى للعمل ليجد صديقاً قديماً متورطاً في قضية قتل، مما يدفعه لاستخدام \"حبوب الفيل الأزرق\" التي تفتح له أبواباً بين الواقع والهلاوس.",
+    "price": "48.00",
+    "image_url": "https://upload.wikimedia.org/wikipedia/ar/f/f3/Al-Feel_al-Azraq.jpg",
+    "created_at": "2026-03-02T06:11:14Z",
+    "last_read": "2026-03-02T04:32:36.038Z",
+    "rating": "4.6"
+  }
+},
+{
+  "model": "catalogue.book",
+  "pk": 5,
+  "fields": {
+    "title": "أولاد حارتنا",
+    "author": "نجيب محفوظ",
+    "description": "من كلاسيكيات الأدب العالمي، يرمز فيها نجيب محفوظ لصراع الأجيال والبحث عن العدالة داخل \"الحارة\". تتناول الرواية قصص الأنبياء بأسلوب رمزي أثار جدلاً واسعاً، وهي من الركائز التي منحت محفوظ جائزة نوبل.",
+    "price": "60.00",
+    "image_url": "https://m.media-amazon.com/images/I/81oUM7n33AL._AC_UF1000,1000_QL80_.jpg",
+    "created_at": "2026-03-02T06:11:14Z",
+    "last_read": "2026-03-02T06:11:14Z",
+    "rating": "4.8"
+  }
+},
+{
+  "model": "catalogue.book",
+  "pk": 6,
+  "fields": {
+    "title": "ساق البامبو",
+    "author": "سعود السنعوسي",
+    "description": "تستعرض الرواية قضية الهوية من خلال قصة \"عيسى/خوسيه\" الذي ولد لأب كويتي وأم فلبينية. يعود البطل للبحث عن جذوره في الكويت ليصطدم بواقع اجتماعي معقد، في سرد يعالج العنصرية والطبقية بصدق وعمق.",
+    "price": "52.00",
+    "image_url": "https://upload.wikimedia.org/wikipedia/ar/d/dd/ساق_البامبو_%28رواية%29.jpg",
+    "created_at": "2026-03-02T06:11:14Z",
+    "last_read": "2026-03-02T04:33:26.376Z",
+    "rating": "4.5"
+  }
+},
+{
+  "model": "catalogue.book",
+  "pk": 7,
+  "fields": {
+    "title": "موسم الهجرة إلى الشمال",
+    "author": "الطيب صالح",
+    "description": "رواية تعكس الصراع بين الشرق والغرب، من خلال قصة مصطفى سعيد السوداني الذي يسافر للدراسة في لندن ويخوض تجارب عاطفية معقدة. تعتبر من أهم الروايات العربية التي عالجت آثار الاستعمار والهوية الثقافية.",
+    "price": "45.00",
+    "image_url": "https://upload.wikimedia.org/wikipedia/ar/c/ce/موسم_الهجرة_إلى_الشمال.jpg",
+    "created_at": "2026-03-02T06:11:14Z",
+    "last_read": "2026-03-02T04:36:53.084Z",
+    "rating": "4.7"
+  }
+},
+{
+  "model": "catalogue.book",
+  "pk": 8,
+  "fields": {
+    "title": "الخيميائي",
+    "author": "باولو كويلو (ترجمة)",
+    "description": "البحث عن الكنز في الأهرامات.",
+    "price": "35.00",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFmcD7X80lqs7JFeNlwKwsLIkYYRCFsul4ZA&s",
+    "created_at": "2026-03-02T06:11:14Z",
+    "last_read": "2026-03-02T06:11:14Z",
+    "rating": "4.4"
+  }
+},
+{
+  "model": "catalogue.book",
+  "pk": 9,
+  "fields": {
+    "title": "مدن الملح",
+    "author": "عبد الرحمن منيف",
+    "description": "خماسية تتحدث عن تغيرات الجزيرة العربية.",
+    "price": "90.00",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxuMaKy8ljAT7tL-DQk7-FO4Zt7f8msIW3KQ&s",
+    "created_at": "2026-03-02T06:11:14Z",
+    "last_read": "2026-03-02T06:11:14Z",
+    "rating": "4.8"
+  }
+},
+{
+  "model": "catalogue.book",
+  "pk": 10,
+  "fields": {
+    "title": "قواعد العشق الأربعون",
+    "author": "إليف شافاق",
+    "description": "جلال الدين الرومي وشمس التبريزي.",
+    "price": "68.00",
+    "image_url": "https://m.media-amazon.com/images/I/61TnE-3gz5L._AC_UF894,1000_QL80_.jpg",
+    "created_at": "2026-03-02T06:11:14Z",
+    "last_read": "2026-03-02T04:37:49.269Z",
+    "rating": "4.3"
+  }
+},
+{
+  "model": "catalogue.book",
+  "pk": 11,
+  "fields": {
+    "title": "لا تحزن",
+    "author": "عائض القرني",
+    "description": "كتاب في السعادة والطمأنينة.",
+    "price": "40.00",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5aCpDlhnzBTo6Kb27S5SOCL1NRvlfXY7qBQ&s",
+    "created_at": "2026-03-02T06:11:14Z",
+    "last_read": "2026-03-02T06:11:14Z",
+    "rating": "4.2"
+  }
+},
+{
+  "model": "catalogue.book",
+  "pk": 13,
+  "fields": {
+    "title": "المرحوم",
+    "author": "حسن كمال",
+    "description": "رواية تتناول عوالم الموت والتشريح بأسلوب ساخر ومثير. يحكي البطل قصصاً عن جثث المشرحة بلسان \"المرحوم\"، مما يفتح نقاشات فلسفية حول الحياة والعدالة بأسلوب تشويقي فريد.",
+    "price": "42.00",
+    "image_url": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1376392753i/18323154.jpg",
+    "created_at": "2026-03-02T06:11:14Z",
+    "last_read": "2026-03-02T06:11:14Z",
+    "rating": "4.0"
+  }
+},
+{
+  "model": "catalogue.book",
+  "pk": 14,
+  "fields": {
+    "title": "تغريدة البجعة",
+    "author": "مكاوي سعيد",
+    "description": "رواية تصور التغيرات الاجتماعية والسياسية في مصر، من خلال شخصية مصور فوتوغرافي يرصد بوسط البلد تحولات المجتمع المصري وصراع الطبقات في لغة أدبية رفيعة.",
+    "price": "39.00",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOaiSt6Ds6kzeLKO4nU8b570ewwtWi4c11rA&s",
+    "created_at": "2026-03-02T06:11:14Z",
+    "last_read": "2026-03-02T06:11:14Z",
+    "rating": "4.1"
+  }
+},
+{
+  "model": "catalogue.book",
+  "pk": 15,
+  "fields": {
+    "title": "تراب الماس",
+    "author": "أحمد مراد",
+    "description": "رواية جريمة وغموض سياسي من الطراز الأول. تدور حول \"طه\" الذي يكتشف أسراراً مرعبة في مذكرات والده، مما يضطره للدخول في عالم \"تراب الماس\" حيث القتل وسيلة للتطهير والانتقام.",
+    "price": "50.00",
+    "image_url": "https://platinum-book.com/wp-content/uploads/2018/08/٢%D9%A0١٨%D9%A0٨٢٥_١١٣٣١١-scaled.jpg",
+    "created_at": "2026-03-02T06:11:14Z",
+    "last_read": "2026-03-02T06:11:14Z",
+    "rating": "4.5"
+  }
+},
+{
+  "model": "catalogue.book",
+  "pk": 17,
+  "fields": {
+    "title": "ليطمئن قلبي",
+    "author": "أدهم شرقاوي",
+    "description": "رسائل إيمانية ونفسية تخاطب القلب والعقل. يحاول أدهم شرقاوي بأسلوبه الدافئ تقديم إجابات لأسئلة الروح القلقة، مزوداً القارئ بجرعات من الطمأنينة والسكينة المستمدة من قصص التراث والدين.",
+    "price": "44.00",
+    "image_url": "https://books-library.com/files/662a3f0099fd71714044672.jpg",
+    "created_at": "2026-03-02T06:11:14Z",
+    "last_read": "2026-03-02T06:11:14Z",
+    "rating": "4.6"
+  }
+},
+{
+  "model": "catalogue.book",
+  "pk": 18,
+  "fields": {
+    "title": "نبأ يقين",
+    "author": "أدهم شرقاوي",
+    "description": "مجموعة من القصص والمقالات القصيرة التي تحمل في طياتها حكماً وعبر إنسانية. يركز الكتاب على الجوانب الأخلاقية والاجتماعية بأسلوب قصصي ممتع يلمس الواقع المعاش.",
+    "price": "43.00",
+    "image_url": "https://kaktuskitabevi.com/wp-content/uploads/2020/08/نبأ-يقين.jpg",
+    "created_at": "2026-03-02T06:11:14Z",
+    "last_read": "2026-03-02T06:11:14Z",
+    "rating": "4.4"
+  }
+},
+{
+  "model": "catalogue.book",
+  "pk": 20,
+  "fields": {
+    "title": "مئة عام من العزلة",
+    "author": "غارسيا ماركيز (ترجمة)",
+    "description": "تحفة غابرييل غارسيا ماركيز التي جسدت تيار \"الواقعية السحرية\". تروي قصة سبعة أجيال من عائلة \"بوينديا\" في قرية ماكوندو، حيث يتداخل الخيال بالواقع والتاريخ بالأسطورة بعبقرية لا تتكرر.",
+    "price": "65.00",
+    "image_url": "https://upload.wikimedia.org/wikipedia/ar/thumb/4/4a/مئة_عام_من_العزلة.jpeg/330px-مئة_عام_من_العزلة.jpeg",
+    "created_at": "2026-03-02T06:11:14Z",
+    "last_read": "2026-03-02T06:11:14Z",
+    "rating": "4.9"
+  }
+},
+{
+  "model": "catalogue.book",
+  "pk": 21,
+  "fields": {
+    "title": "شفرة دافنشي",
+    "author": "دان براون (ترجمة)",
+    "description": "لغز عالمي يبدأ بجريمة قتل في متحف اللوفر. يتبع البروفيسور روبرت لانغدون سلسلة من الرموز المخبأة في أعمال ليوناردو دافنشي للكشف عن سر تاريخي قد يغير وجه الديانة المسيحية.",
+    "price": "58.00",
+    "image_url": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1294336646i/9711966.jpg",
+    "created_at": "2026-03-02T06:11:14Z",
+    "last_read": "2026-03-02T06:11:14Z",
+    "rating": "4.3"
+  }
+},
+{
+  "model": "catalogue.book",
+  "pk": 22,
+  "fields": {
+    "title": "خرائط التيه",
+    "author": "بثينة العيسى",
+    "description": "رواية مؤلمة تتناول فقدان طفل في مكة أثناء الحج. تستعرض بثينة العيسى مشاعر التيه والبحث المستميت، مسلطة الضوء على عوالم خفية وقضايا اجتماعية شائكة في رحلة البحث عن المفقود.",
+    "price": "46.00",
+    "image_url": "https://cdn.salla.sa/bgjGj/1L9n3chR8x8kk6x1DzTNunVaihV4JkmwP8jf0QxP.jpg",
+    "created_at": "2026-03-02T06:11:14Z",
+    "last_read": "2026-03-02T06:11:14Z",
+    "rating": "4.2"
+  }
+},
+{
+  "model": "catalogue.book",
+  "pk": 23,
+  "fields": {
+    "title": "الأسود يليق بك",
+    "author": "أحلام مستغانمي",
+    "description": "قصة حب مفعمة بالكبرياء والأناقة بين مغنية جزائرية ورجل أعمال لبناني. تستكشف أحلام مستغانمي من خلالها مشاعر الفقد، الحزن، والقدرة على الصمود في وجه الحب الصعب بأسلوبها الشعري المعهود.",
+    "price": "49.00",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz2_J979HR8VNx36t05u6Z52E6rCfK6kCw6w&s",
+    "created_at": "2026-03-02T06:11:14Z",
+    "last_read": "2026-03-02T06:11:14Z",
+    "rating": "4.5"
+  }
+},
+{
+  "model": "catalogue.book",
+  "pk": 24,
+  "fields": {
+    "title": "ذاكرة الجسد",
+    "author": "أحلام مستغانمي",
+    "description": "الحائزة على جائزة \"نجيب محفوظ\"، تروي قصة فنان جزائري فقد ذراعه في الثورة ويقع في حب ابنة قائده السابق. رواية عن الذاكرة، الوطن، والجسد الذي لا ينسى جراحه القديمة.",
+    "price": "53.00",
+    "image_url": "https://cdn.salla.sa/wwwBz/38435818-38a4-4ad2-af89-7d996c67c8c3-666.21893888516x1000-pMWFT6Overcg2HpFpDmwXTEVNl12ZyOCkLvZJIWD.jpg",
+    "created_at": "2026-03-02T06:11:14Z",
+    "last_read": "2026-03-02T06:11:14Z",
+    "rating": "4.7"
+  }
+},
+{
+  "model": "catalogue.book",
+  "pk": 25,
+  "fields": {
+    "title": "بين القصرين",
+    "author": "نجيب محفوظ",
+    "description": "الجزء الأول من الثلاثية الشهيرة لنجيب محفوظ. تجسد حياة الأسرة المصرية في عهد الاحتلال الإنجليزي، مسلطة الضوء على شخصية \"سي السيد\" وازدواجية حياته بين الصرامة في البيت واللهو خارجه.",
+    "price": "55.00",
+    "image_url": "https://media.zid.store/d2badddb-b623-4e8a-aa65-2094fc64d6c6/49d0db7b-df5e-4506-9c59-e66119cdf400.jpg",
+    "created_at": "2026-03-02T06:11:14Z",
+    "last_read": "2026-03-02T06:11:14Z",
+    "rating": "4.8"
+  }
+},
+{
+  "model": "catalogue.book",
+  "pk": 26,
+  "fields": {
+    "title": "The Psychology of Money",
+    "author": "Morgan Housel",
+    "description": "Explore the strange ways people think about wealth, greed, and happiness. Morgan Housel shares 19 short stories exploring the unconventional psychology behind financial success, teaching you that doing well with money is more about behavior than technical skill.",
+    "price": "72.00",
+    "image_url": "https://m.media-amazon.com/images/I/71TRuW6rS6L.jpg",
+    "created_at": "2026-03-02T06:11:14Z",
+    "last_read": "2026-03-02T06:11:14Z",
+    "rating": "4.8"
+  }
+},
+{
+  "model": "catalogue.book",
+  "pk": 27,
+  "fields": {
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "description": "No matter your goals, Atomic Habits offers a proven framework for improving every day. James Clear reveals practical strategies that will teach you exactly how to form good habits, break bad ones, and master the tiny behaviors that lead to remarkable results.",
+    "price": "78.00",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEjw4ZsmKK2POgoqIk1ubHUKFxQjQ8b11ybQ&s",
+    "created_at": "2026-03-02T06:11:14Z",
+    "last_read": "2026-03-02T06:11:14Z",
+    "rating": "4.9"
+  }
+},
+{
+  "model": "catalogue.book",
+  "pk": 28,
+  "fields": {
+    "title": "Start with Why",
+    "author": "Simon Sinek",
+    "description": "Why are some people and organizations more innovative and influential than others? Simon Sinek explains that the most successful leaders all start with WHY—the fundamental purpose that inspires others to take action.",
+    "price": "68.00",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLlzazm0WtaYQK7jHR1hsIIcX26RELy1Edog&s",
+    "created_at": "2026-03-02T06:11:14Z",
+    "last_read": "2026-03-02T06:11:14Z",
+    "rating": "4.6"
+  }
+},
+{
+  "model": "catalogue.book",
+  "pk": 29,
+  "fields": {
+    "title": "1984",
+    "author": "George Orwell",
+    "description": "A chilling prophecy about the future. George Orwell’s masterpiece depicts a world of total government surveillance, where Big Brother is always watching and \"Doublethink\" is a way of life. It remains the definitive cautionary tale of totalitarianism.",
+    "price": "35.00",
+    "image_url": "https://m.media-amazon.com/images/I/71sOSrd+JxL._AC_UF1000,1000_QL80_.jpg",
+    "created_at": "2026-03-02T06:11:14Z",
+    "last_read": "2026-03-02T06:11:14Z",
+    "rating": "4.7"
+  }
+},
+{
+  "model": "catalogue.book",
+  "pk": 30,
+  "fields": {
+    "title": "Thinking, Fast and Slow",
+    "author": "Daniel Kahneman",
+    "description": "Daniel Kahneman, a Nobel Prize winner in Economics, takes us on a groundbreaking tour of the mind. He explains the two systems that drive our thinking: System 1 is fast and emotional, while System 2 is slower and more logical.",
+    "price": "82.00",
+    "image_url": "https://m.media-amazon.com/images/I/71f6vN-XmHL.jpg",
+    "created_at": "2026-03-02T06:11:14Z",
+    "last_read": "2026-03-02T06:11:14Z",
+    "rating": "4.5"
+  }
+},
+{
+  "model": "catalogue.book",
+  "pk": 31,
+  "fields": {
+    "title": "Deep Work",
+    "author": "Cal Newport",
+    "description": "Deep work is the ability to focus without distraction on a cognitively demanding task. Cal Newport argues that this skill is becoming increasingly rare and valuable in our modern economy, providing a guide to transforming your work life.",
+    "price": "81.98",
+    "image_url": "https://m.media-amazon.com/images/I/71din4TLubL._AC_UF1000,1000_QL80_.jpg",
+    "created_at": "2026-03-02T06:11:14Z",
+    "last_read": "2026-03-02T06:11:14Z",
+    "rating": "4.6"
+  }
+},
+{
+  "model": "catalogue.book",
+  "pk": 32,
+  "fields": {
+    "title": "Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "description": "A timeless classic set in the Roaring Twenties. Jay Gatsby is a self-made millionaire who pursues the beautiful Daisy Buchanan. It is a profound critique of the American Dream and the emptiness of wealth.",
+    "price": "25.00",
+    "image_url": "https://www.gutenberg.org/cache/epub/64317/pg64317.cover.medium.jpg",
+    "created_at": "2026-03-02T06:11:14Z",
+    "last_read": "2026-03-02T06:11:14Z",
+    "rating": "4.4"
+  }
+},
+{
+  "model": "catalogue.book",
+  "pk": 33,
+  "fields": {
+    "title": "Sapiens",
+    "author": "Yuval Noah Harari",
+    "description": "A masterpiece of world literature, Sapiens explores how biology and history have defined us and enhanced our understanding of what it means to be human. Harari spans the entire human history from the first humans to the present day.",
+    "price": "88.00",
+    "image_url": "https://m.media-amazon.com/images/I/713jIoMO3UL.jpg",
+    "created_at": "2026-03-02T06:11:14Z",
+    "last_read": "2026-03-02T06:11:14Z",
+    "rating": "4.8"
+  }
+},
+{
+  "model": "catalogue.book",
+  "pk": 34,
+  "fields": {
+    "title": "Zero to One",
+    "author": "Peter Thiel",
+    "description": "What is the secret to starting a successful business? Peter Thiel, co-founder of PayPal, argues that progress comes from building things that go from 0 to 1, creating something entirely new instead of copying existing ideas.",
+    "price": "64.00",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_xsGFHRHw8fBQM12Vgss46rPzrkmFnftT_w&s",
+    "created_at": "2026-03-02T06:11:14Z",
+    "last_read": "2026-03-02T06:11:14Z",
+    "rating": "4.5"
+  }
+},
+{
+  "model": "catalogue.book",
+  "pk": 35,
+  "fields": {
+    "title": "The Lean Startup",
+    "author": "Eric Ries",
+    "description": "A movement that has changed the way companies are built. Eric Ries explains how to use continuous innovation to create radically successful businesses by focusing on what customers actually want through rapid experimentation.",
+    "price": "70.00",
+    "image_url": "https://m.media-amazon.com/images/I/71sxTeZIi6L.jpg",
+    "created_at": "2026-03-02T06:11:14Z",
+    "last_read": "2026-03-02T06:11:14Z",
+    "rating": "4.4"
+  }
+},
+{
+  "model": "catalogue.book",
+  "pk": 36,
+  "fields": {
+    "title": "Rich Dad Poor Dad",
+    "author": "Robert Kiyosaki",
+    "description": "In this classic on financial education, Robert Kiyosaki shares the lessons he learned from his two fathers. He challenges the myth that you need a high income to be rich and explains the difference between working for money and having your money work for you.",
+    "price": "60.00",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRqV4RYStclfPT-95oYFJIrWWiQGJF5zX4mw&s",
+    "created_at": "2026-03-02T06:11:14Z",
+    "last_read": "2026-03-02T06:11:14Z",
+    "rating": "4.5"
+  }
+},
+{
+  "model": "catalogue.book",
+  "pk": 37,
+  "fields": {
+    "title": "Man’s Search for Meaning",
+    "author": "Viktor Frankl",
+    "description": "Psychiatrist Viktor Frankl’s memoir has riveted generations of readers with its descriptions of life in Nazi death camps and its lessons for spiritual survival. He argues that finding meaning in suffering is the key to human resilience.",
+    "price": "40.00",
+    "image_url": "https://m.media-amazon.com/images/I/6115m6Z49vL.jpg",
+    "created_at": "2026-03-02T06:11:14Z",
+    "last_read": "2026-03-02T06:11:14Z",
+    "rating": "4.7"
+  }
+},
+{
+  "model": "catalogue.book",
+  "pk": 38,
+  "fields": {
+    "title": "Educated",
+    "author": "Tara Westover",
+    "description": "Born to survivalists in the mountains of Idaho, Tara Westover was seventeen the first time she set foot in a classroom. This is her journey from a restricted, violent upbringing to achieving a PhD from Cambridge University.",
+    "price": "65.00",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcuLipdReOGjslChgAkOoTA__dHAuugazLwA&s",
+    "created_at": "2026-03-02T06:11:14Z",
+    "last_read": "2026-03-02T06:11:14Z",
+    "rating": "4.6"
+  }
+},
+{
+  "model": "catalogue.book",
+  "pk": 39,
+  "fields": {
+    "title": "Can’t Hurt Me",
+    "author": "David Goggins",
+    "description": "David Goggins reveals that most of us tap into only 40% of our capabilities. In this memoir, he shares his story of overcoming poverty and physical abuse to become a Navy SEAL and world-class endurance athlete.",
+    "price": "75.00",
+    "image_url": "https://m.media-amazon.com/images/I/51TNypSYkoL._SL500_.jpg",
+    "created_at": "2026-03-02T06:11:14Z",
+    "last_read": "2026-03-02T06:11:14Z",
+    "rating": "4.8"
+  }
+},
+{
+  "model": "catalogue.book",
+  "pk": 40,
+  "fields": {
+    "title": "The 48 Laws of Power",
+    "author": "Robert Greene",
+    "description": "The definitive guide to the modern world of power. Robert Greene synthesizes the philosophies of Machiavelli, Sun Tzu, and others into 48 laws that help you understand how to gain, observe, or defend against ultimate control.",
+    "price": "95.00",
+    "image_url": "https://m.media-amazon.com/images/I/61J3Uu4jOLL._AC_UF1000,1000_QL80_.jpg",
+    "created_at": "2026-03-02T06:11:14Z",
+    "last_read": "2026-03-02T06:11:14Z",
+    "rating": "4.5"
+  }
+},
+{
+  "model": "catalogue.book",
+  "pk": 41,
+  "fields": {
+    "title": "Brave New World",
+    "author": "Aldous Huxley",
+    "description": "A vision of a futuristic society managed by genetic engineering and conditioning. In this world, everyone is happy, but at the cost of freedom, individuality, and deep human emotion. A chilling counterpart to Orwell’s 1984.",
+    "price": "32.00",
+    "image_url": "https://m.media-amazon.com/images/I/91D4YvdC0dL._AC_UF894,1000_QL80_.jpg",
+    "created_at": "2026-03-02T06:11:14Z",
+    "last_read": "2026-03-02T06:11:14Z",
+    "rating": "4.3"
+  }
+},
+{
+  "model": "catalogue.book",
+  "pk": 42,
+  "fields": {
+    "title": "Clean Code",
+    "author": "Robert Martin",
+    "description": "Even bad code can function, but if code isn’t clean, it can bring a development organization to its knees. Robert C. Martin presents a handbook on agile software craftsmanship, teaching you how to write better code.",
+    "price": "120.00",
+    "image_url": "https://m.media-amazon.com/images/I/71nj3JM-igL.jpg",
+    "created_at": "2026-03-02T06:11:14Z",
+    "last_read": "2026-03-02T06:11:14Z",
+    "rating": "4.7"
+  }
+},
+{
+  "model": "catalogue.book",
+  "pk": 43,
+  "fields": {
+    "title": "The Silent Patient",
+    "author": "Alex Michaelides",
+    "description": "Alicia Berenson is a famous painter who shoots her husband five times in the face and then never speaks another word. Theo Faber is a criminal psychotherapist who is determined to uncover her motive and get her to talk.",
+    "price": "55.00",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoZwQdWbGp2mOS7IPb_6qRUq3J4Dx1MQyDOQ&s",
+    "created_at": "2026-03-02T06:11:14Z",
+    "last_read": "2026-03-02T06:11:14Z",
+    "rating": "4.4"
+  }
+},
+{
+  "model": "catalogue.book",
+  "pk": 44,
+  "fields": {
+    "title": "Where the Crawdads Sing",
+    "author": "Delia Owens",
+    "description": "A beautiful coming-of-age mystery set in the marshes of North Carolina. Kya Clark, the \"Marsh Girl,\" survives alone for years, but when a local golden boy is found dead, the community suspects her, leading to a dramatic trial.",
+    "price": "58.00",
+    "image_url": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1582135294i/36809135.jpg",
+    "created_at": "2026-03-02T06:11:14Z",
+    "last_read": "2026-03-02T06:11:14Z",
+    "rating": "4.5"
+  }
+},
+{
+  "model": "catalogue.book",
+  "pk": 45,
+  "fields": {
+    "title": "Ikigai",
+    "author": "Hector Garcia",
+    "description": "According to the Japanese, everyone has an \"Ikigai\"—a reason for living. This book shares the secrets of the people of Okinawa, who live longer than anyone else in the world, on how to find purpose and joy in daily life.",
+    "price": "50.00",
+    "image_url": "https://m.media-amazon.com/images/I/71lJBs5MNlL.jpg",
+    "created_at": "2026-03-02T06:11:14Z",
+    "last_read": "2026-03-02T06:11:14Z",
+    "rating": "4.6"
+  }
+},
+{
+  "model": "catalogue.book",
+  "pk": 46,
+  "fields": {
+    "title": "The 5 AM Club",
+    "author": "Robin Sharma",
+    "description": "Robin Sharma presents a revolutionary morning routine that has helped his clients maximize their productivity, activate their best health, and bulletproof their serenity in this age of overwhelming complexity.",
+    "price": "54.00",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQswsVGIPX08r9kirZvZz3tf_fa0x4qWrKevg&s",
+    "created_at": "2026-03-02T06:11:14Z",
+    "last_read": "2026-03-02T06:11:14Z",
+    "rating": "4.5"
+  }
+},
+{
+  "model": "catalogue.book",
+  "pk": 47,
+  "fields": {
+    "title": "The Subtle Art of Not Giving a F*ck",
+    "author": "Mark Manson",
+    "description": "A refreshing, honest guide to self-improvement. Mark Manson argues that we should stop trying to be \"positive\" all the time and instead become better at handling adversity and choosing what truly matters to us.",
+    "price": "62.00",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdUi619NlKWEJ4Yy_wgO-PR3_xwj4L9NklEQ&s",
+    "created_at": "2026-03-02T06:11:14Z",
+    "last_read": "2026-03-02T06:11:14Z",
+    "rating": "4.4"
+  }
+},
+{
+  "model": "catalogue.book",
+  "pk": 48,
+  "fields": {
+    "title": "Dune",
+    "author": "Frank Herbert",
+    "description": "The epic masterpiece of science fiction. Set on the desert planet Arrakis, it tells the story of Paul Atreides and the battle for \"the spice,\" the most valuable substance in the universe. A tale of politics, religion, and ecology.",
+    "price": "110.00",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZaNBIUXSQbdBQO5OHXW5Nka686FA66wQq4Q&s",
+    "created_at": "2026-03-02T06:11:14Z",
+    "last_read": "2026-03-02T06:11:14Z",
+    "rating": "4.7"
+  }
+},
+{
+  "model": "catalogue.book",
+  "pk": 49,
+  "fields": {
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "description": "Bilbo Baggins is a hobbit who enjoys a comfortable, unambitious life. But his contentment is disturbed when the wizard Gandalf and a group of dwarves whisk him away on an adventure to raid the treasure of Smaug the Magnificent.",
+    "price": "38.00",
+    "image_url": "https://cdn.kobo.com/book-images/cf32789f-22db-4ad0-bba4-9c0bf69fb872/1200/1200/False/the-hobbit.jpg",
+    "created_at": "2026-03-02T06:11:14Z",
+    "last_read": "2026-03-02T06:11:14Z",
+    "rating": "4.8"
+  }
+},
+{
+  "model": "catalogue.book",
+  "pk": 50,
+  "fields": {
+    "title": "Animal Farm",
+    "author": "George Orwell",
+    "description": "The classic satire of the Russian Revolution. Orwell tells the story of a group of farm animals who rebel against their human farmer, hoping to create a society where animals can be equal, free, and happy, only to find themselves under a new dictatorship.",
+    "price": "28.00",
+    "image_url": "https://prodimage.images-bn.com/pimages/9780452284241_p0_v6_s600x595.jpg",
+    "created_at": "2026-03-02T06:11:14Z",
+    "last_read": "2026-03-02T04:15:41.962Z",
+    "rating": "4.7"
+  }
+}
+]

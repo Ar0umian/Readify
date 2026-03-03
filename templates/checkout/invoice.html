@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container py-5" style="margin-top: 100px;">
+    <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+        <div class="card-header bg-dark text-white p-4 d-flex justify-content-between align-items-center">
+            <div>
+                <h2 class="fw-bold mb-0">Readify</h2>
+                <p class="mb-0 opacity-75 small">فاتورة ضريبية </p>
+            </div>
+            <div class="text-end">
+                <h5 class="mb-0">رقم الطلب: #{{ order.id }}</h5>
+                <p class="mb-0 small text-light opacity-75">التاريخ: {{ order.created_at|date:"Y-m-d" }}</p>
+            </div>
+        </div>
+
+        <div class="card-body p-5">
+            <div class="row mb-5">
+                <div class="col-6">
+                    <h6 class="text-muted text-uppercase small fw-bold">إلى:</h6>
+                    <p class="fw-bold mb-0">{{ order.user.username }}</p>
+                    <p class="text-muted small">{{ order.user.email }}</p>
+                </div>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table table-borderless border-bottom">
+                    <thead class="bg-light">
+                        <tr>
+                            <th class="py-3">الكتاب</th>
+                            <th class="py-3 text-center">الكمية</th>
+                            <th class="py-3 text-end">السعر</th>
+                            <th class="py-3 text-end">الإجمالي</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for item in items %}
+                        <tr class="border-bottom">
+                            <td class="py-3 fw-bold text-primary">{{ item.book.title }}</td>
+                            <td class="py-3 text-center">{{ item.quantity }}</td>
+                            <td class="py-3 text-end">{{ item.price_at_purchase }} ريال</td>
+                            <td class="py-3 text-end">{{ order.total_price }} ريال</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+
+           <div class="row justify-content-end mt-4">
+                <div class="col-md-4 text-end">
+                    <div class="d-flex justify-content-between mb-2">
+                        <span class="text-muted">المجموع الفرعي:</span>
+                        <span>{{ subtotal }} ريال</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span class="text-muted">ضريبة القيمة المضافة (5%):</span>
+                        <span class="text-danger">+ {{ tax_amount|floatformat:2 }} ريال</span>
+                    </div>
+                    <div class="d-flex justify-content-between pt-3 border-top">
+                        <h5 class="fw-bold">الإجمالي النهائي:</h5>
+                        <h5 class="fw-bold text-success">{{ final_total|floatformat:2 }} ريال</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center my-4">
+                <img src="data:image/png;base64,{{ qr_code }}" 
+                    alt="Invoice QR" 
+                    class="img-fluid border p-2 bg-white shadow-sm" 
+                    style="width: 150px;">
+            </div>
+        </div>
+
+        <div class="card-footer bg-light p-4 text-center">
+            <button onclick="window.print()" class="btn btn-outline-dark rounded-pill px-4 me-2">
+                <i class="bi bi-printer me-2"></i> طباعة الفاتورة
+            </button>
+            <p class="mt-3 mb-0 text-muted small">شكراً لاختيارك Readify، نتمنى لك قراءة ممتعة!</p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

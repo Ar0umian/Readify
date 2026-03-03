@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container py-5" style="margin-top: 100px;">
+    <h2 class="fw-bold mb-4 text-end"><i class="bi bi-cart3 text-primary"></i> سلة المشتريات</h2>
+
+    <div class="row g-4">
+        <div class="col-lg-8">
+            <div class="card border-0 shadow-sm rounded-4 p-3">
+                {% for item in items %}
+                <div class="d-flex align-items-center mb-3 p-3 bg-light rounded-4">
+                    <img src="{{ item.book.image_url }}" class="rounded-3 shadow-sm" style="width: 80px; height: 110px; object-fit: cover;">
+                    <div class="ms-4 flex-grow-1 text-start">
+                        <h5 class="fw-bold mb-1">{{ item.book.title }}</h5>
+                        <p class="text-primary fw-bold mb-0">{{ item.book.price }} ريال</p>
+                        <small class="text-muted">الكمية: {{ item.quantity }}</small>
+                    </div>
+                    <div class="text-end">
+                        <p class="fw-bold mb-0">{{ item.get_total_item_price }} ريال</p>
+                        <a href="{% url 'remove_from_cart' item.id %}" class="text-danger small text-decoration-none fw-bold">
+                            <i class="bi bi-trash3 me-1"></i> حذف
+                        </a>
+                    </div>
+                </div>
+                {% empty %}
+                <div class="text-center py-5">
+                    <i class="bi bi-cart-x fs-1 text-muted"></i>
+                    <p class="mt-3">سلتك فارغة حالياً..</p>
+                    <a href="/" class="btn btn-primary rounded-pill px-4">تصفح الكتب</a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="card border-0 shadow-sm rounded-4 p-4 sticky-top" style="top: 120px;">
+                <h5 class="fw-bold mb-4">ملخص الطلب</h5>
+                <div class="d-flex justify-content-between mb-2">
+                    <span>عدد الكتب:</span>
+                    <span class="fw-bold">{{ items.count }}</span>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between mb-4">
+                    <span class="fs-5">المجموع الكلي:</span>
+                    <span class="fs-5 fw-bold text-success">{{ cart.get_total_price }} ريال</span>
+                </div>
+                <a href="{% url 'checkout' %}" class="btn btn-success w-100 rounded-pill py-3 fw-bold shadow-sm mb-2">
+                    إتمام الشراء <i class="bi bi-credit-card ms-2"></i>
+                </a>
+                <div class="cart-actions mt-4">
+                    <a href="{% url 'all_books' %}" class="btn btn-outline-secondary">
+                        <i class="bi bi-arrow-right"></i> العودة للمكتبة العامة
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

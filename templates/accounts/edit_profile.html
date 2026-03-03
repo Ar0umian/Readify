@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container py-5" style="margin-top: 100px;">
+    <div class="row justify-content-center">
+        <div class="col-md-3 mb-4">
+            <div class="list-group shadow-sm border-0 rounded-4 overflow-hidden">
+                <a href="#" class="list-group-item list-group-item-action active border-0 py-3">
+                    <i class="bi bi-person-circle me-2"></i> البيانات الأساسية
+                </a>
+                <a href="{% url 'change_password' %}" class="list-group-item list-group-item-action border-0 py-3">
+                    <i class="bi bi-shield-lock me-2"></i> تغيير كلمة المرور
+                </a>
+                <a href="{% url 'profile' %}" class="list-group-item list-group-item-action border-0 py-3 text-danger">
+                    <i class="bi bi-arrow-left-circle me-2"></i> العودة للبروفايل
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-7">
+            <div class="card border-0 shadow-sm rounded-4 p-4">
+                <h4 class="fw-bold mb-4">إعدادات الحساب</h4>
+                
+                <form method="POST">
+                    {% csrf_token %}
+                    
+                    <div class="text-center mb-4 p-3 bg-light rounded-4">
+                        <img src="{{ user.profile.image_url }}" id="img-preview" 
+                             class="rounded-circle shadow-sm border border-4 border-white mb-3" 
+                             style="width: 100px; height: 100px; object-fit: cover;">
+                        <div class="small text-muted">سيتم تحديث صورتك فور تغيير الرابط بالأسفل</div>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <label class="form-label small fw-bold text-secondary">رابط الصورة الشخصية</label>
+                            {{ p_form.image_url }}
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <label class="form-label small fw-bold text-secondary">اسم المستخدم</label>
+                            {{ u_form.username }}
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <label class="form-label small fw-bold text-secondary">البريد الإلكتروني</label>
+                            {{ u_form.email }}
+                        </div>
+                    </div>
+
+                    <hr class="my-4 opacity-25">
+
+                    <div class="d-flex justify-content-end gap-2">
+                        <a href="{% url 'profile' %}" class="btn btn-light rounded-pill px-4">إلغاء</a>
+                        <button type="submit" class="btn btn-primary rounded-pill px-5 fw-bold shadow-sm">حفظ التغييرات</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        
+    </div>
+</div>
+
+<style>
+    /* تنسيق الحقول لتشبه Bootstrap الاحترافي */
+    input { 
+        border-radius: 12px !important; 
+        padding: 10px 15px !important;
+        border: 1px solid #dee2e6 !important;
+    }
+    input:focus {
+        border-color: #0d6efd !important;
+        box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.1) !important;
+    }
+    .list-group-item.active { background-color: #0d6efd; }
+</style>
+{% endblock %}

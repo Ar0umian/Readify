@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container py-5" style="margin-top: 100px;">
+    <div class="row g-5 align-items-center">
+        <div class="col-md-5">
+            <img src="{{ book.image_url }}" class="img-fluid rounded-4 shadow-lg" alt="{{ book.title }}" style="width: 100%; height: 550px; object-fit: cover;">
+        </div>
+
+        <div class="col-md-7 text-start">
+            <nav aria-label="breadcrumb" class="mb-3">
+                <a href="/" class="btn btn-outline-secondary btn-sm rounded-pill">
+                    <i class="bi bi-arrow-right"></i> العودة للرئيسية
+                </a>
+            </nav>
+            
+            <h1 class="display-5 fw-bold mb-3 text-dark">{{ book.title }}</h1>
+            <p class="lead text-muted mb-4">تأليف: <span class="text-style2 fw-bold">{{ book.author }}</span></p>
+            
+            <div class="mb-4">
+                <span class="text-warning fs-4">
+                    {% if book.rating >= 4.5 %} ★★★★☆
+                    {% elif book.rating >= 3.5 %} ★★★☆
+                    {% elif book.rating >= 2.5 %} ★★☆☆
+                    {% else %} ★★☆☆☆
+                    {% endif %}
+                </span>
+                <span class="ms-2 text-muted">({{ book.rating }}/5)</span>
+            </div>
+
+            <h3 class="fw-bold text-style mb-4">{{ book.price }} SAR</h3>
+            
+            <div class="p-4 bg-light rounded-4 mb-4 border-start border-4 book-description-box ">
+                <h5 class="fw-bold">وصف الكتاب:</h5>
+                <p class="text-secondary lh-lg mb-0">{{ book.description }}</p>
+            </div>
+
+            <a href="{% url 'add_to_cart' book.id %}" class="btn btn-custom-brown btn-lg rounded-pill px-5 shadow-sm fw-bold animate-hover">
+                <i class="bi bi-cart-plus me-2"></i> أضف إلى السلة
+            </a>
+        </div>
+    </div>
+
+    <div class="mt-5 pt-4 border-top">
+    <h4 class="fw-bold mb-4">آراء القراء ({{ comments.count }})</h4>
+    
+    {% for comment in comments %}
+    <div class="d-flex p-3 mb-3 bg-white border rounded-4 shadow-sm">
+        <img src="{{ comment.user.profile.image_url }}" 
+             class="rounded-circle me-3" 
+             style="width: 50px; height: 50px; object-fit: cover; border: 1px solid #ddd;">
+        
+        <div class="w-100 text-start">
+            <div class="d-flex justify-content-between">
+                <h6 class="fw-bold mb-1">{{ comment.user.username }}</h6>
+                <small class="text-muted">{{ comment.created_at|timesince }}</small>
+            </div>
+            <p class="mb-0 text-secondary">{{ comment.text }}</p>
+        </div>
+    </div>
+    {% empty %}
+    <p class="text-muted text-center py-4">لا توجد مراجعات بعد. كن أول من يضع بصمته!</p>
+    {% endfor %}
+
+    <div class="mt-5 p-4 bg-light rounded-4">
+        {% if user.is_authenticated %}
+            <h5 class="fw-bold mb-3">أضف تعليقك</h5>
+            <form method="post">
+                {% csrf_token %}
+                <textarea name="text" class="form-control rounded-4 mb-3 border-0 shadow-sm" rows="3" placeholder="ما رأيك في هذا الكتاب؟" required></textarea>
+                <button type="submit" class="btn btn-custom-brown rounded-pill px-4 fw-bold">نشر التعليق</button>
+            </form>
+        {% else %}
+            <div class="text-center py-2">
+                <p class="mb-2">يجب عليك تسجيل الدخول لتتمكن من إضافة تعليق.</p>
+                <a href="{% url 'login' %}" class="btn btn-outline-primary rounded-pill px-4">تسجيل الدخول الآن</a>
+            </div>
+        {% endif %}
+    </div>
+</div>
+
+{% endblock %}

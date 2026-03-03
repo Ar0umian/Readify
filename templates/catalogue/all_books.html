@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+    /* لمسات تصميم مخصصة لراحة العين */
+    .book-container {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border: none;
+        background: #fff;
+    }
+    .book-container:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+    }
+    .img-wrapper {
+        position: relative;
+        overflow: hidden;
+        border-radius: 15px;
+    }
+    .book-img {
+        height: 320px;
+        width: 100%;
+        object-fit: cover;
+        transition: scale 0.5s ease;
+    }
+    .book-container:hover .book-img {
+        scale: 1.1;
+    }
+    .price-tag {
+        font-size: 1.2rem;
+        color: #2c3e50;
+        font-weight: 700;
+    }
+    .category-label {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #95a5a6;
+    }
+</style>
+
+<div class="container mt-5 pt-5">
+    <div class="text-center mb-5">
+        <h1 class="fw-bold display-5">اكتشف عالم القراءة</h1>
+        <p class="text-muted">تصفح مجموعتنا المختارة من أفضل الكتب والروايات</p>
+        <div class="mx-auto" style="width: 60px; height: 4px; background: #000; border-radius: 2px;"></div>
+    </div>
+
+    <div class="row justify-content-center mb-5">
+        <div class="col-md-6">
+            <form method="GET" action="{% url 'all_books' %}" class="input-group shadow-sm rounded-pill overflow-hidden border">
+                <input type="text" name="q" class="form-control border-0 px-4 py-3" placeholder="عن ماذا تبحث اليوم؟" value="{{ query|default:'' }}">
+                <button class="btn btn-white border-0 px-4" type="submit">
+                    <i class="bi bi-search text-muted"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="row g-4">
+        {% for book in books %}
+        <div class="col-6 col-md-4 col-lg-3">
+            <div class="card h-100 book-container p-2">
+                <div class="img-wrapper shadow-sm">
+                    <img src="{{ book.image_url }}" class="book-img" alt="{{ book.title }}" 
+                         onerror="this.src='https://via.placeholder.com/300x400?text=No+Image';">
+                </div>
+                <div class="card-body px-1 pt-3 pb-1">
+                    <span class="category-label">إصدار مميز</span>
+                    <h6 class="card-title fw-bold mt-1 mb-2 text-dark text-truncate">{{ book.title }}</h6>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="price-tag">{{ book.price }} <small class="fw-light" style="font-size: 0.6em;">ر.س</small></span>
+                        <a href="{% url 'book_detail' book.id %}" class="btn btn-dark btn-sm rounded-circle shadow-sm">
+                            <i class="bi bi-arrow-right-short fs-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% empty %}
+        <div class="col-12 text-center py-5">
+            <div class="display-1 text-light"><i class="bi bi-book"></i></div>
+            <p class="fs-4 text-muted">لم نجد ما تبحث عنه للأسف..</p>
+            <a href="{% url 'all_books' %}" class="btn btn-link">عرض كل الكتب</a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

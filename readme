@@ -1,0 +1,17 @@
+# Readify Bookstore 📚
+
+### 🛠️ تعليمات التشغيل:
+1. **تثبيت المكتبات:**
+   `pip install -r requirements.txt`
+
+2. **بناء قاعدة البيانات:**
+   `python manage.py migrate`
+
+3. **تحميل بيانات الكتب الجاهزة:**
+   `python manage.py loaddata books_data.json`
+
+4. **تشغيل الموقع:**
+   `python manage.py runserver`
+
+💡 **ملاحظة للمقيم:**
+تم حذف ملف `db.sqlite3` وبيانات الإيميل الشخصية لأغراض أمنية. المشروع جاهز لإنشاء قاعدة بيانات جديدة بمجرد تشغيل أمر migrate.
