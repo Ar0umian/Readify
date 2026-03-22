@@ -1,19 +1,53 @@
 # Readify Bookstore 📚
 
 ### 🛠️ تعليمات التشغيل:
-1. **تثبيت المكتبات:**
-   `pip install -r requirements.txt`
+1. **إنشاء البيئة الافتراضية**
+   `python3 -m venv myenv` # Mac
+   `python -m venv myenv`  #Windows
 
-2. **بناء قاعدة البيانات:**
+2. **تفعيل البيئة الافتراضية**
+   `source myenv/bin/activate` # Mac
+   `myenv\Scripts\activate`    #Windows
+
+
+3. **تثبيت المكتبات:**
+   `pip install -r requirements.txt`
+   
+
+4. **بناء قاعدة البيانات:**
+  استخدم (cmd او terminal) واكتب الامر التالي: 
+   `mysql -u root -p`
+
+   ثم انشيء قاعدة البيانات : readify
+   `CREATE DATABASE readify;`
+
+   اخرج من قاعدة البيانات بواسطة امر او باغلاق النافذة: 
+   `exit` 
+
+   ثم فعل هذا الامر في vcode: 
    `python manage.py migrate`
 
-3. **تحميل بيانات الكتب الجاهزة:**
+5. **تحميل بيانات الكتب الجاهزة:**
    `python manage.py loaddata books_data.json`
 
-4. **تشغيل الموقع:**
+
+6. **تعديل الاعدادات**
+   لتفعيل ميزة إرسال الإيميلات، قم بتعديل القيم التالية في ملف basefile/settings.py
+   EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+   EMAIL_HOST = 'smtp.gmail.com'
+   EMAIL_PORT = 587
+   EMAIL_USE_TLS = True
+
+   #ابحث عن استخدام كلمة مرور التطبيقات المقدمة من google
+   EMAIL_HOST_USER = 'example@gmail.com' # إيميلك
+   EMAIL_HOST_PASSWORD = 'cwic znbs ihso uicg' # كلمة مرور التطبيقات
+   DEFAULT_FROM_EMAIL = f'Readify <{EMAIL_HOST_USER}>'
+
+
+
+7. **تشغيل الموقع:**
    `python manage.py runserver`
 
+
 💡 **ملاحظة للمقيم:**
-تم حذف ملف `db.sqlite3` 
-وبيانات الإيميل الشخصية لأغراض أمنية. 
-المشروع جاهز لإنشاء قاعدة بيانات جديدة بمجرد تشغيل أمر migrate.
+تم حذف ملف `db.sqlite3` وبيانات الإيميل الشخصية لأغراض أمنية. المشروع جاهز لإنشاء قاعدة بيانات جديدة بمجرد تشغيل أمر migrate.
