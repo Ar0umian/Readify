@@ -127,4 +127,9 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'example@gmail.com' # إيميلك
 EMAIL_HOST_PASSWORD = 'cwic znbs ihso uicg' # كلمة مرور التطبيقات
-DEFAULT_FROM_EMAIL = 'Readify <your-email@gmail.com>' 
+DEFAULT_FROM_EMAIL = f'Readify <{EMAIL_HOST_USER}>'
+
+
+
+LOGIN_URL = 'login'
+
