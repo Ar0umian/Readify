@@ -126,7 +126,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'example@gmail.com' # إيميلك
-EMAIL_HOST_PASSWORD = 'cwic znbs ihso uicg' # كلمة مرور التطبيقات
+EMAIL_HOST_PASSWORD = '**** **** **** ****' # كلمة مرور التطبيقات
 DEFAULT_FROM_EMAIL = f'Readify <{EMAIL_HOST_USER}>'
 
 
